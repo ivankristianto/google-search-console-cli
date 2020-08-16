@@ -1,0 +1,7 @@
+#!/usr/bin/env node
+
+'use strict';
+
+process.title = 'Google Search Console API with CLI interface';
+
+require( '../lib/cli' );

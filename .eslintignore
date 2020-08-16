@@ -1,0 +1,5 @@
+# Vendor files.
+/node_modules/**
+lib/**
+
+# Generated files.
