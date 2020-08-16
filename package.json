@@ -1,7 +1,7 @@
 {
-  "name": "@ivankristianto/google-search-console-cli",
+  "name": "gsc-cli",
   "version": "0.0.1",
-  "description": "Google Search Console API with CLI interface",
+  "description": "Google Search Console and Indexing API with CLI interface",
   "bin": {
     "gsc": "bin/gsc"
   },
