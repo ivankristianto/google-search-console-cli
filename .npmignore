@@ -3,3 +3,7 @@ test/
 coverage/
 .travis.yml
 .gitignore
+.idea/
+.babelrc
+.editorconfig
+.eslintignore
