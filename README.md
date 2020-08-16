@@ -40,6 +40,11 @@ Documentation is available at [the wiki page](https://github.com/ivankristianto/
 
 Pull requests and feedback are welcome. _Contributing guideline will be added later._
 
+## Disclaimer
+
+This tool will only give the signal to Google Indexing API that URL has content updated.
+It will not guarantee that Google crawl that immediately. Read more about this [Indexing API](https://developers.google.com/search/apis/indexing-api/v3/quickstart)
+
 ## Changelog
 
 A complete listing of all notable changes to this package in [CHANGELOG.md](https://github.com/ivankristianto/google-search-console-cli/blob/master/CHANGELOG.md).
