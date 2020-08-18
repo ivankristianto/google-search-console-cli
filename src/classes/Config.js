@@ -1,8 +1,6 @@
 import os from 'os';
 import path from 'path';
 import fs from 'fs-extra';
-import yargs from 'yargs';
-import log from '../utils/logger';
 
 class Config {
 	static getConfigFile() {
@@ -48,37 +46,6 @@ class Config {
 		config[key] = value;
 
 		await Config.write(config);
-	}
-
-	/**
-	 * Get auth token.
-	 *
-	 * @returns {Promise<boolean|*>}
-	 */
-	static async getAuthToken() {
-		let token = await Config.get('apiToken');
-		const { useToken } = yargs.argv;
-
-		if (useToken) {
-			const config = await Config.getAll();
-			const accounts = config.accounts.filter(function (account) {
-				return account.name === useToken;
-			});
-
-			if (accounts.length === 0) {
-				log.warning('Token not found');
-				return false;
-			}
-
-			token = accounts[0].apiToken;
-		}
-
-		if (!token) {
-			log.warning('Please run cf config setup');
-			return false;
-		}
-
-		return token;
 	}
 }
 
